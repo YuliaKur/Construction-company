@@ -1,0 +1,51 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+}
+
+.nav__logo {
+	flex-shrink: 0;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+
+	a {
+		color: #494949;
+	}
+
+	a:hover,
+	a.active {
+		color: #35aff4;
+	}
+
+}
+
+.info {
+	position: relative;
+
+	&--tel::after{
+		content: '';
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            transform: translate(0%, -50%);
+
+            background-repeat: no-repeat;
+            background-position: center;
+			background-image: url('./../img/Calling.svg');
+	}
+
+}
+
+.nav__icon {
+	display: none;
+
+}
